@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Explorer | Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="welcome-message">Welcome to Travel Explorer</h1>
+    </header>
+
+    <nav>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#destinations" class="nav-link">Destinations</a>
+      <a href="#packages" class="nav-link">Packages</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home">
+        <h2>Explore the World with Us!</h2>
+        <p>
+          Discover amazing destinations and travel packages curated just for
+          you.
+        </p>
+        <button onclick="showTip()">Get a Travel Tip</button>
+        <p id="tip"></p>
+      </section>
+
+      <!-- Destinations Section -->
+      <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-card">
+          <img
+            src="https://lh5.googleusercontent.com/p/AF1QipPTxHG0_dJooayYKzCB004tccRM5MhxYp6KWa53=w243-h406-n-k-no-nu"
+            alt="Eiffel Tower in Paris"
+          />
+          <p>Experience the romance of Paris!</p>
+        </div>
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFsaSUyMGJlYWNofGVufDB8fDB8fHww"
+            alt="Beautiful Beach in Bali"
+          />
+          <p>Relax on the stunning beaches of Bali!</p>
+        </div>
+        <div class="destination-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqX7pWpGJPpxNT6d3R0wGW2LeUWn1EMbMvow&s"
+            alt="Shibuya Crossing in Tokyo"
+          />
+          <p>Enjoy the vibrant culture of Tokyo!</p>
+        </div>
+      </section>
+
+      <!-- Packages Section -->
+      <section id="packages">
+        <h2>Travel Packages</h2>
+        <div class="package">
+          <h3>Paris Getaway</h3>
+          <p>Includes flight, hotel, and guided tours for 5 days.</p>
+        </div>
+        <div class="package">
+          <h3>Bali Retreat</h3>
+          <p>
+            7-day stay at a luxury resort with spa and adventure activities.
+          </p>
+        </div>
+        <div class="package">
+          <h3>Tokyo Explorer</h3>
+          <p>Experience Japan’s culture, food, and city life for 6 days.</p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Get in touch with us!</p>
+        <form>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="enter your name here..."
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="enter your email here..."
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="enter message here..."
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

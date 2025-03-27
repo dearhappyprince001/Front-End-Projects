@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functional Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="display" readonly />
+      <div class="button-container">
+        <button class="button" data-value="C">C</button>
+        <button class="button" data-value="1">1</button>
+        <button class="button" data-value="2">2</button>
+        <button class="button" data-value="+">+</button>
+        <button class="button" data-value="3">3</button>
+        <button class="button" data-value="4">4</button>
+        <button class="button" data-value="-">-</button>
+        <button class="button" data-value="5">5</button>
+        <button class="button" data-value="6">6</button>
+        <button class="button" data-value="*">*</button>
+        <button class="button" data-value="7">7</button>
+        <button class="button" data-value="8">8</button>
+        <button class="button" data-value="/">/</button>
+        <button class="button" data-value="=">=</button>
+        <button class="button" data-value="9">9</button>
+        <button class="button" data-value="0">0</button>
+        <button class="button" data-value=".">.</button>
+        <button class="button" data-value="←">←</button>
+      </div>
+    </div>
+
+    <script>
+      let currentDisplay = ""; //Initializes an empty string to store the user's input (numbers and operators).
+      const display = document.querySelector("#display");
+
+      document
+        .querySelector(".button-container")
+        .addEventListener("click", (e) => {
+          if (!e.target.classList.contains("button")) return;
+
+          const value = e.target.getAttribute("data-value");
+
+          if (value === "C") {
+            currentDisplay = ""; //If the C (Clear) button is clicked, it resets currentDisplay to an empty string.
+          } else if (value === "=") {
+            try {
+              currentDisplay = Function(
+                `'use strict'; return (${currentDisplay})`
+              )();
+            } catch {
+              currentDisplay = "Error";
+            }
+          } else if (value === "←") {
+            currentDisplay = currentDisplay.slice(0, -1); //If the Backspace (←) button is clicked, it removes the last character from currentDisplay.
+          } else {
+            currentDisplay += value; //If any number (0-9) or operator (+ - * / .) is clicked, it appends the value to currentDisplay.
+          }
+
+          display.value = currentDisplay;
+        });
+    </script>
+  </body>
+</html>

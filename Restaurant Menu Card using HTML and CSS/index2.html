@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu Card</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .menu-container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: cadetblue;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      h1 {
+        color: purple;
+      }
+      .menu-section {
+        margin: 20px 0;
+      }
+      .menu-section h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #d35400;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      .menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      .menu-item img {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      .menu-item:last-child {
+        border-bottom: none;
+      }
+      .menu-item .item-info {
+        display: flex;
+        align-items: center;
+      }
+      .menu-item span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-container">
+      <h1>Our Menu</h1>
+
+      <div class="menu-section">
+        <h2>Appetizers</h2>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/047/270/299/small/garlic-bread-with-cheese-and-parsley-food-photography-png.png"
+              alt="Garlic Bread"
+            />
+            <p>Garlic Bread</p>
+          </div>
+          <span>120 Rs</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROEPOPvgqMaawBCtOnnnqNXBD47_EFjfggsQ&s"
+              alt="Bruschetta"
+            />
+            <p>Bruschetta</p>
+          </div>
+          <span>150 Rs</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUUO7I6p5hcfCMYa6URocjt0M1RzVEsf5fHg&s"
+              alt="Caesar Salad"
+            />
+            <p>Caesar Salad</p>
+          </div>
+          <span>100 Rs</span>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h2>Main Courses</h2>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0myPd9EvFVP5dxMN9wioyxFUspb1o1MmJw&s"
+              alt="Grilled Pasta"
+            />
+            <p>Grilled Pasta</p>
+          </div>
+          <span>350 Rs</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://www.sharmispassions.com/wp-content/uploads/2015/12/alfredopasta5-500x500.jpg"
+              alt="Pasta Alfredo"
+            />
+            <p>Pasta Alfredo</p>
+          </div>
+          <span>250 Rs</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4pjh5HFOSyfgfNWWlR7TgEOUN2ZHRcUMQ5Q&s"
+              alt="Margherita Pizza"
+            />
+            <p>Margherita Pizza</p>
+          </div>
+          <span>300 Rs</span>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBnfTXs9DpaPffvPTpjsS2XrGmEqiS1PebKA&s"
+              alt="Chocolate Cake"
+            />
+            <p>Chocolate Cake</p>
+          </div>
+          <span>200 Rs</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://www.momontimeout.com/wp-content/uploads/2023/09/no-bake-peanut-butter-cheesecake-square.jpeg"
+              alt="Cheese Cake"
+            />
+            <p>Cheese Cake</p>
+          </div>
+          <span>500 Rs</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://spicecravings.com/wp-content/uploads/2021/06/Mango-Ice-Cream-9.jpg"
+              alt="Mango Ice-cream"
+            />
+            <p>Mango Ice-cream</p>
+          </div>
+          <span>50 Rs</span>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h2>Beverages</h2>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuqpje-Zz8UcJteYeHQWkX46-aSOhE5a20fg&s"
+              alt="Fresh Lime Soda"
+            />
+            <p>Fresh Lime Soda</p>
+          </div>
+          <span>80 Rs</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://mytastycurry.com/wp-content/uploads/2020/04/Cafe-style-cold-coffee-with-icecream.jpg"
+              alt="Cold Coffee"
+            />
+            <p>Cold Coffee</p>
+          </div>
+          <span>120 Rs</span>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAGEkR_0e7EqraI2ylb1peHkE8RVLMllL88w&s"
+              alt="Masala Tea"
+            />
+            <p>Masala Tea</p>
+          </div>
+          <span>60 Rs</span>
+        </div>
+      </div>
+
+      <div
+        class="menu-section"
+        style="background: #f9f1c6; padding: 15px; border-radius: 7px"
+      >
+        <h2>Today's Special</h2>
+        <div class="menu-item">
+          <div class="item-info">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzcK-VeJ6mbJtC5mywPVc0YySpPSfzdc2HYQ&s"
+              alt="Chef's Special Pasta"
+            />
+            <p>Chef's Special Pasta</p>
+          </div>
+          <span>Only 299 Rs</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
